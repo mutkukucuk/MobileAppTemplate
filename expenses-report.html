@@ -1,0 +1,140 @@
+<!doctype html>
+  <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <!-- Bootstrap Icon -->
+
+    
+
+    <link rel="stylesheet" type="text/css" href="css/icon/bootstrap-icons.css">
+
+    <title>Income - Expenses NE-BUTCE</title>
+
+    <style type="text/css">
+      body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+    </style>
+  </head>
+
+  <!--navbar-->
+  <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light border">
+    <div class="container justify-content-center">
+      <a href="index.html" class="navbar-brand p-0"><b>NE-BÜTÇE</b></a>
+    </div>
+  </nav>
+
+  <!--navbar-->
+
+
+  <body>
+    <div class="container-fluid p-0">
+
+      <div class="card-body">
+
+       <div class="d-flex justify-content-center col-md-12">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="income-report.html">INCOME REPORT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="expenses-report.html">EXPENSES REPORT</a>
+          </li>
+        </ul>
+      </div>
+
+
+      <canvas class="mt-4" id="myChart" width="400" height="400"></canvas>
+
+
+
+    </div>
+
+
+
+
+
+
+  </div>
+
+
+
+  <footer>
+    <nav class="navbar fixed-bottom navbar-light bg-light p-0 m-0">
+      <div class="container p-0">
+        <div class="btn-group col-12">
+          <a href="index.html" class="btn btn-outline-secondary btn-lg">
+           <i class="bi bi-house" style="font-size: 2rem;"></i>
+         </a>
+         <a href="income-expense.html" class="btn btn-outline-secondary btn-lg ">
+          <i class="bi bi-arrow-down-up" style="font-size: 2rem;"></i>
+        </a>
+        <a href="income-report.html" class="btn btn-outline-secondary btn-lg active">
+          <i class="bi bi-cash" style="font-size: 2rem;"></i>
+        </a>
+        <a href="#" class="btn btn-outline-secondary btn-lg">
+          <i class="bi bi-info" style="font-size: 2rem;"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+</footer>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('myChart').getContext('2d');
+  const myChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ['Fatura', 'Eğitim', 'Kira', 'Market'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5],
+        backgroundColor: [
+        'rgba(255, 99, 132, 0.2)',
+        'rgba(54, 162, 235, 0.2)',
+        'rgba(255, 206, 86, 0.2)',
+        'rgba(75, 192, 192, 0.2)'
+       
+        ],
+        borderColor: [
+        'rgba(255, 99, 132, 1)',
+        'rgba(54, 162, 235, 1)',
+        'rgba(255, 206, 86, 1)',
+        'rgba(75, 192, 192, 1)'
+      
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+
+
+
+</body>
+</html> 

@@ -1,0 +1,151 @@
+<!doctype html>
+  <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <!-- Bootstrap Icon -->
+
+    
+
+    <link rel="stylesheet" type="text/css" href="css/icon/bootstrap-icons.css">
+
+    <title>Income - Expenses NE-BUTCE</title>
+
+    <style type="text/css">
+      body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+    </style>
+  </head>
+
+  <!--navbar-->
+  <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light border">
+    <div class="container justify-content-center">
+      <a href="index.html" class="navbar-brand p-0"><b>NE-BÜTÇE</b></a>
+    </div>
+  </nav>
+
+  <!--navbar-->
+
+
+  <body>
+    <div class="container-fluid p-0">
+
+      <div class="card-body">
+       <div class="d-flex justify-content-center col-md-12">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link " href="income-add.html">INCOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="expenses-add.html">EXPENSES</a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="needs-validation" novalidate>
+        <div class="input-group mb-3 mt-3">
+          <span class="input-group-text">TL</span>
+          <input type="number" pattern="\d*" class="form-control" required name="">
+          <span class="input-group-text">.00</span>
+        </div>
+
+        <div class="mb-3">
+          <input type="" name="" required class="form-control" list="datalistOption" id="exampleDataList" placeholder="Kategori Seçin">
+
+          <datalist id="datalistOption">
+            <option value="Market">
+              <option value="Faturalar">
+                <option value="Nakit">
+                  <option value="Eğitim">
+
+                </datalist>
+              </div>
+
+              <div class="mb-3">
+                <button type="submit" name="" class="btn btn-outline-secondary w-100 btn-lg">
+                  <i class="bi bi-plus"></i> Gider Ekle</button>
+                </div>
+              </form>
+
+
+              <div class="card mt-4">
+                <div class="card-header">
+                  Özlü Sözler
+                </div>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <p>Paraya fazla bir güvenin olmasın fakat onu güvenilir bir yere koy</p>
+                    <footer class="blockquote-footer"><cite>Anonim</cite></footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+          </div>
+
+
+
+          <footer>
+            <nav class="navbar fixed-bottom navbar-light bg-light p-0 m-0">
+              <div class="container p-0">
+                <div class="btn-group col-12">
+                  <a href="index.html" class="btn btn-outline-secondary btn-lg">
+                   <i class="bi bi-house" style="font-size: 2rem;"></i>
+                 </a>
+                 <a href="income-expense.html" class="btn btn-outline-secondary btn-lg active">
+                  <i class="bi bi-arrow-down-up" style="font-size: 2rem;"></i>
+                </a>
+                <a href="income-report.html" class="btn btn-outline-secondary btn-lg">
+                  <i class="bi bi-cash" style="font-size: 2rem;"></i>
+                </a>
+                <a href="#" class="btn btn-outline-secondary btn-lg">
+                  <i class="bi bi-info" style="font-size: 2rem;"></i>
+                </a>
+              </div>
+            </div>
+          </nav>
+        </footer>
+
+
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript">
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+  .forEach(function (form) {
+    form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>
+
+</body>
+</html> 
